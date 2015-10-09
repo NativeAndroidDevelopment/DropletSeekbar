@@ -16,14 +16,14 @@
         android:layout_marginTop="20dp"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:barWidth="10dp"
+        app:seekBarWidth="10dp"
         app:defaultValue="35" />
 
     <com.devomb.dropletseekbar.Widget.DropletSeekBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        app:barColor="#48da12"
+        app:seekBarColor="#48da12"
         app:defaultValue="78"
         app:maxValue="99"
         app:minValue="1" />
@@ -32,8 +32,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        app:barBackgroundColor="#000000"
-        app:barColor="#aaaaaa"
+        app:seekBarBackgroundColor="#000000"
+        app:seekBarColor="#aaaaaa"
         app:defaultValue="15"
         app:maxValue="45"
         app:minValue="5" />

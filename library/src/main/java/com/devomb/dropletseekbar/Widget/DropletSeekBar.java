@@ -153,11 +153,11 @@ public class DropletSeekBar extends View implements AnimationManager.OnAnimation
     private void getAttributes(AttributeSet set, int defStyleAttr) {
         TypedArray attrs = getContext().obtainStyledAttributes(set, R.styleable.DropletSeekBar, defStyleAttr, 0);
 
-        setBarColor(attrs.getColor(R.styleable.DropletSeekBar_barColor, defaultBarColor));
-        setBarBackgroundColor(attrs.getColor(R.styleable.DropletSeekBar_barBackgroundColor, defaultBarBackgroundColor));
+        setBarColor(attrs.getColor(R.styleable.DropletSeekBar_seekBarColor, defaultBarColor));
+        setBarBackgroundColor(attrs.getColor(R.styleable.DropletSeekBar_seekBarBackgroundColor, defaultBarBackgroundColor));
         setRange(attrs.getInt(R.styleable.DropletSeekBar_minValue, 0), attrs.getInt(R.styleable.DropletSeekBar_maxValue, 100));
         setBarValue(attrs.getInt(R.styleable.DropletSeekBar_defaultValue, 0), false);
-        setBarWidth(attrs.getDimensionPixelSize(R.styleable.DropletSeekBar_barWidth, getDimensionPixelSize(TypedValue.COMPLEX_UNIT_DIP, 7)));
+        setBarWidth(attrs.getDimensionPixelSize(R.styleable.DropletSeekBar_seekBarWidth, getDimensionPixelSize(TypedValue.COMPLEX_UNIT_DIP, 7)));
         setDropletTextColor(attrs.getColor(R.styleable.DropletSeekBar_android_textColor, defaultTextColor));
         setDropletTextSize(attrs.getDimensionPixelSize(R.styleable.DropletSeekBar_android_textSize, getDimensionPixelSize(TypedValue.COMPLEX_UNIT_SP, 12)));
         setDropletTextStyle(attrs.getInt(R.styleable.DropletSeekBar_android_textStyle, Typeface.NORMAL));
